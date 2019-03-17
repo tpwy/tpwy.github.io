@@ -122,7 +122,7 @@
 
 
 
-  <title>信息分析与决策chapter1 | Qingqi's Blog</title>
+  <title>信息分析与决策chapter3p1 | Qingqi's Blog</title>
   
 
 
@@ -229,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tpwy.github.io/2019/03/17/信息分析与决策chapter1/">
+    <link itemprop="mainEntityOfPage" href="https://tpwy.github.io/2019/03/17/信息分析与决策chapter3p1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="倾启君">
@@ -246,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">信息分析与决策chapter1</h1>
+          <h1 class="post-title" itemprop="name headline">信息分析与决策chapter3p1</h1>
         
 
         <div class="post-meta">
@@ -258,7 +258,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-17T15:47:12+08:00">2019-03-17</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-17T20:09:40+08:00">2019-03-17</time>
             
 
             
@@ -310,7 +310,7 @@
                 
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
-                <span title="Words count in article">1.2k</span>
+                <span title="Words count in article">1.4k</span>
               
 
               
@@ -344,68 +344,56 @@
       
 
       
-        <h1 id="课程概述"><a href="#课程概述" class="headerlink" title="课程概述"></a>课程概述</h1><p>信息分析与决策是本学期唯三的一门课程，也是专业里非常实用的一门课程，算是点亮一个SPSS和做调研问卷的技能树吧,如果以后想要从事数据方面的工作帮助也是很大的。单有技术不懂理论已经越来越走不动了。</p>
-<p>信息源于分析，分析的过程是逐步认识事物，理解失误的过程，其目的就是发觉或发现有价值的知识或规律帮助人们</p>
+        <h1 id="数据处理与数据核查-Part1"><a href="#数据处理与数据核查-Part1" class="headerlink" title="数据处理与数据核查 Part1"></a>数据处理与数据核查 Part1</h1><p>从这一章节开始终于是要掌握数据处理的知识框架和SPSS的操作了，两开花两开花。</p>
+<h2 id="3-1-数据计算机化"><a href="#3-1-数据计算机化" class="headerlink" title="3.1 数据计算机化"></a>3.1 数据计算机化</h2><h3 id="3-1-1-编码系统的建立"><a href="#3-1-1-编码系统的建立" class="headerlink" title="3.1.1 编码系统的建立"></a>3.1.1 编码系统的建立</h3><p>编码系统是一套数据处理的模式，包含数据的架构(Framework)和处理流程(Procedure)</p>
+<p><img src="https://ws1.sinaimg.cn/large/d90d2938gy1g161z1w74pj20f606bjrk.jpg" alt="编码系统"></p>
+<h3 id="3-1-2-数据的编码与键入"><a href="#3-1-2-数据的编码与键入" class="headerlink" title="3.1.2 数据的编码与键入"></a>3.1.2 数据的编码与键入</h3><p>数据录入和处理方式的不同:</p>
 <ul>
-<li>描述 Description (What, 现状)</li>
-<li>解释 Explanation (Why, 影响因素)</li>
-<li>预测 Prediction (How, 建模，支持决策和行动)</li>
-<li>控制 Control 事务(Goal, 目的)</li>
-<li>最终使人类的生活状态更好</li>
-</ul>
-<p>科学研究的特征：</p>
-<ol>
-<li>系统性 Systematicness</li>
-<li>实证性 Empirical character</li>
-<li>客观性 Objectivity</li>
+<li>量化性数据： 数据形式存在的数据一般来说直接可用，因为带有量尺的特行或研究者赋予的特殊意义。</li>
+<li>文字型数据： 数据原始形态是文字，数据处理必须加以转换为数字的形态。<ol>
+<li>依照编码系统进行分类</li>
+<li>设定虚拟变量(Dummy variable)，进行数据的整备：虚拟是指在数据收集完成后，以人为方式，将数据加以处理，赋予特定计量符号的过程，这种过程生成的新变量为虚拟变量。</li>
 </ol>
-<p>总结：科学研究是一个连续，循环发展的过程，其成果具有累积性。当我们提出某个研究问题，从一个混沌位置的谜团，逐步理清脉络，建立一条解释性的知识架构到最后能够提出一套为人们所运用的使用知识，展现了科学活动的严谨和丰富的内容，为人类生活带来源源不绝的发展动力。</p>
-<p>科学研究采取的是”有系统的实证研究方法”所进行的研究。</p>
-<p>研究的基本元素：</p>
-<ul>
-<li>对象(Objective): 数字或数字矢量构成的事物</li>
-<li>对象的属性(Attributes): 属性的质或量上的变化，变量Variable</li>
-<li>假设(Hypothesis): 描述变量与变量的关系</li>
+</li>
 </ul>
-<p>Note： 这里的基本元素和编程的对应概念可以做类比</p>
-<p>研究方法：</p>
+<p>建立编码表：用于记载数据数量化的所有格式与内容，并配合计算机处理的需求，详述数据处理的步骤。</p>
+<p>编码表组成：</p>
 <ul>
-<li>描述性研究(Descriptive research): 汇报现象的各种描述性统计参数，研究对象的各种统计分析</li>
-<li>探索性研究(Exploratory research): 对各变量之间的关系进行描述</li>
-<li>验证性研究(Confirmatory research): 对某一现象进行假设，并用统计的方法进行验证</li>
+<li>原始题号： 每份问卷的编号是重要的管理数据。</li>
+<li>变量名称： 规范变量的命名</li>
+<li>变量标注：对变量的描述，在SPSS中定义为Label数值，即对变量定义域的说明</li>
+<li>数值标注：连续型变量可直接理解。分类变量则为数值意义的规范解释</li>
+<li>数值的意义： 若使用了量尺，数据则具有特定强度。通常分数越高代表强度越强，称为正向题。若分数越高代表强度越弱则称为反向提，需要标注并特别注意。</li>
+<li>遗漏处理：数据处理多以特定数值来代表漏打的情况。</li>
 </ul>
-<p>Note: 全部统计学和数理分析的方法啊…</p>
-<p>描述性研究</p>
-<p>基于可视化，用图形来描述数据特征、分布与关系</p>
-<p><img src="https://ws1.sinaimg.cn/large/d90d2938gy1g15vqjfjxmj20h00c8myb.jpg" alt="描述性研究图表建议"></p>
-<p>探索性研究</p>
-<p>描述数据的分布，探索数据的状态及潜藏的规律。采用数值，图表等方法</p>
-<p><img src="https://ws1.sinaimg.cn/large/d90d2938gy1g15w5431wzj20ss0clada.jpg" alt="探索性数据分析思维导图"></p>
-<p>验证性研究</p>
-<p>常常采用回归分析的方法</p>
-<ul>
-<li>相关分析</li>
-<li>线性回归分析</li>
-</ul>
-<p>研究工具：<br>统计(Statistics)是数据分析领域的重要工具，是收集，组织，分析，解释和表达数据的科学。基于统计的数据分析方法是本课程讲授的重点内容</p>
-<p>在社会科学领域，特别是管理科学领域，常用的调查研究方法可以用以下流程示意:</p>
+<p>编码表的作用：</p>
+<p>在大规模施测的问卷调查与长期性的纵贯研究中，涉及因多人长期的工作，编码表的设计与运作对于研究的顺利完成具有关键性的影响。</p>
+<h3 id="废卷的处理"><a href="#废卷的处理" class="headerlink" title="废卷的处理"></a>废卷的处理</h3><p>检查遗漏答案的情况，一下几种情况需要考虑：</p>
 <ol>
-<li>研究目标</li>
-<li>问卷设计</li>
-<li>抽样调查、实验设计</li>
-<li>采集、处理数据</li>
-<li>分析数据</li>
-<li>结论</li>
-<li>辅助决策</li>
-<li>实践检验</li>
+<li>问卷过长，双面打印导致的过多遗漏</li>
+<li>填答者习惯性跳答，或过度谨慎，不作答，造成遗漏现象</li>
+<li>恶意说谎，作答欺骗的问卷</li>
 </ol>
-<p>工具软件:</p>
-<ul>
-<li>SPSS(课程使用，点亮技能树)</li>
-<li>SAS(真实强大，然而暂时没有计划用)</li>
-<li>R语言(未来计划)</li>
-<li>Python(熟手工具和主力，课程外扩展，熟悉使用SciPy进行描述统计、参数估计和回归分析等操作)</li>
+<h3 id="多选项的处理与分析"><a href="#多选项的处理与分析" class="headerlink" title="多选项的处理与分析"></a>多选项的处理与分析</h3><ul>
+<li>SPSS的多重反应分析(Multiple Response)又称为多选项分析，主要是针对问卷调查的多选问题。</li>
+<li>多选问题在问卷调查中普遍存在，要求被调查者从问卷中给出的若干个可选答案中选择一个以上的答案。</li>
+<li>但SPSS变量每个变量只对应一个值，因此出现多个选项答案时要特别处理。</li>
 </ul>
+<p>处理方法：</p>
+<ul>
+<li>二分法(Multiple Dichotomies Method)：分解问题，将多选项问题中的每个答案看成一个0/1变量，分别表示是否选择了答案</li>
+<li>分类法(Multiple Cateogry Method):估计多选项问题最多可能出现的答案数，然后为每个答案定义一个变量，变量的取值为备选答案</li>
+<li>基本频数分析(Analyze/Multiple Response/Frequencies)可用来把握单个变量的数据分布情况。</li>
+<li>在实际分析中，不仅需要了解单变量的分布特征，还常常需要分析多个变量在不同取值下的分布，掌握多变量的联合分布特征，从而进一步探讨变量之间的互相影响和关系</li>
+<li>通常采用列联表(Crosstabulation)分析，即交叉分组下的频数分析。</li>
+</ul>
+<p>总结：</p>
+<p>这节课的三种重点：</p>
+<ol>
+<li>学会使用SPSS创建数据表，理解变量视图中每个字段的意思并学会使用它们。</li>
+<li>如何处理废卷，以及根据废卷情况改进问卷。</li>
+<li>针对问卷调查的多选问题，使用SPSS分析功能中的多重响应来对多选项进行处理和分析。具体有定义变量集，对多重响应集进行频数分析和交叉表分析，难点在于如何使用多重响应功能处理排序题(一开始没有仔细查看变量视图，没能搞懂设计的四个虚拟变量是啥意思….)</li>
+</ol>
 
       
     </div>
@@ -425,6 +413,10 @@
           
             <a href="/tags/SPSS/" rel="tag"># SPSS</a>
           
+            <a href="/tags/数据处理/" rel="tag"># 数据处理</a>
+          
+            <a href="/tags/数据核查/" rel="tag"># 数据核查</a>
+          
         </div>
       
 
@@ -436,15 +428,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/17/信息分析与决策chapter2p2/" rel="next" title="信息分析与决策chapter2 Part2">
+                <i class="fa fa-chevron-left"></i> 信息分析与决策chapter2 Part2
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/17/信息分析与决策chapter2p1/" rel="prev" title="信息分析与决策chapter2 Part1">
-                信息分析与决策chapter2 Part1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -576,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#课程概述"><span class="nav-number">1.</span> <span class="nav-text">课程概述</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据处理与数据核查-Part1"><span class="nav-number">1.</span> <span class="nav-text">数据处理与数据核查 Part1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-数据计算机化"><span class="nav-number">1.1.</span> <span class="nav-text">3.1 数据计算机化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-1-编码系统的建立"><span class="nav-number">1.1.1.</span> <span class="nav-text">3.1.1 编码系统的建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-数据的编码与键入"><span class="nav-number">1.1.2.</span> <span class="nav-text">3.1.2 数据的编码与键入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#废卷的处理"><span class="nav-number">1.1.3.</span> <span class="nav-text">废卷的处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多选项的处理与分析"><span class="nav-number">1.1.4.</span> <span class="nav-text">多选项的处理与分析</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
