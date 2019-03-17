@@ -117,7 +117,7 @@
 
 
 
-  <title>Qingqi's Blog</title>
+  <title>信息分析与决策chapter2 Part1 | Qingqi's Blog</title>
   
 
 
@@ -136,8 +136,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,9 +209,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -242,9 +241,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/17/信息分析与决策chapter2p1/" itemprop="url">信息分析与决策chapter2 Part1</a></h1>
+          <h1 class="post-title" itemprop="name headline">信息分析与决策chapter2 Part1</h1>
         
 
         <div class="post-meta">
@@ -342,22 +339,140 @@
       
 
       
-        
-          
-          数据与数据的获得2.1 总体、个体、特征与数据
-总体/群体(Population or Universe): 所研究对象的全体称为总体
-个体(Individual or Case)或成分(Elements): 组成总体的元素(Element)，称为个体
-有限总体：总体中个体的数目是有限的
-无限总体:
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/17/信息分析与决策chapter2p1/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h1 id="数据与数据的获得"><a href="#数据与数据的获得" class="headerlink" title="数据与数据的获得"></a>数据与数据的获得</h1><h2 id="2-1-总体、个体、特征与数据"><a href="#2-1-总体、个体、特征与数据" class="headerlink" title="2.1 总体、个体、特征与数据"></a>2.1 总体、个体、特征与数据</h2><ol>
+<li>总体/群体(Population or Universe): 所研究对象的全体称为总体</li>
+<li>个体(Individual or Case)或成分(Elements): 组成总体的元素(Element)，称为个体<ul>
+<li>有限总体：总体中个体的数目是有限的</li>
+<li>无限总体: 总体中个体的数目是无限的</li>
+</ul>
+</li>
+<li>指标或变量(Variable): 研究任何总体，必然对其个体的某些特征感兴趣。<ul>
+<li>附着于个体，描述个体，即个体特征(Characteristics, Attributes)</li>
+<li>表征个体特征的量称为指标或变量</li>
+<li>当要联合考察总体或个体的若干个特征时，即可描述为指标向量(Vector)</li>
+</ul>
+</li>
+<li>指标值或数据(Data): 研究总体，面向构成总体的个体，对于每一个个体，都有一个反应其特征的具体描述，被称为指标值(Value)</li>
+</ol>
+<h2 id="2-2-数据类型"><a href="#2-2-数据类型" class="headerlink" title="2.2 数据类型"></a>2.2 数据类型</h2><ol>
+<li><p>Scale 刻度级数据(可测量的)</p>
+<ul>
+<li>比率级(定比尺度，Scale Measurement):有具体的实际测量值，可以做+-*/运算，具有绝对的零点</li>
+<li>间距级(Interval):具体有一定单位的实际测量值。通常是对事物类别或次序之间间距的测度，如摄氏度。可比较变量之间的差异，能作+-运算，不能进行*/运算</li>
+</ul>
+</li>
+<li><p>Ordinal 序次级(顺序级)数据: 数据的中间级，是对事物之间等级或顺序差别的一种测度，可比较优劣和排序。</p>
+<p> Ex: 受教育程度</p>
+<ul>
+<li>小学 = 1</li>
+<li>初中 = 2</li>
+<li>高中 = 3</li>
+<li>大学本科 = 4</li>
+<li><p>研究生 = 5</p>
+<p>各编码的序值，代表了受教育程度的高地差异，这一差异不能准确描述差别的大小，但可以确定其顺序，即可进行不等式运算。</p>
+</li>
+</ul>
+</li>
+<li><p>Nominal 名义级数据: 是对事物的类型或属性的一种测度，按照事物的某种属性对其进行分类或分组。数据的最低级，无次序之分，只是一种标志,如性别，职业等</p>
+</li>
+</ol>
+<p>总结：</p>
+<p><img src="https://ws1.sinaimg.cn/large/d90d2938gy1g15zadzyauj20nq09kacc.jpg" alt="数据类型与测度"></p>
+<p>基本数据类型的作用：</p>
+<ul>
+<li>在统计分析中，不同测度类型的数据扮演不同的决策，具有不同的应用范围</li>
+<li>等级越高，应用范围约广泛；等级越低，应用范围越受限制。</li>
+<li>顺序级变量和刻度级变量也可用于分类。</li>
+<li>不同测度类型的数据都可以作为统计对象直接进行统计处理。</li>
+</ul>
+<h2 id="2-3-获得数据的调查方法"><a href="#2-3-获得数据的调查方法" class="headerlink" title="2.3 获得数据的调查方法"></a>2.3 获得数据的调查方法</h2><ul>
+<li>观察(调查)法(Investigation)<ol>
+<li>普查方法(Census): 普查针对有限总体，收集有限总体中对每个个体的有关指标的指标值，如人口普查。</li>
+<li>抽样调查(Sampling): 在总体中选择部分个体进行调查，从局部数据来了解总体情况。在总体中，部分个体所组成的集合称为样本(Sample)集合。</li>
+</ol>
+</li>
+<li>实验方法(Experiment)</li>
+</ul>
+<p>抽样调查的两层含义:</p>
+<ol>
+<li>抽样: 抽取部分个体</li>
+<li>调查: 调查反映在个体上的所要研究的特征的数据。样本个体的特征数据为”样本数据”</li>
+</ol>
+<p>抽样调查的意义:</p>
+<ul>
+<li>成本低</li>
+<li>耗费时间少</li>
+<li>信息收集更为详尽和准确</li>
+</ul>
+<p>抽样方法(Method of sampling)</p>
+<ul>
+<li>非随机抽样(Judgment Sampling): 按照非随机的原则或者依据对个体和总体特征的判断，从总体中抽取个体的做法。eg: 典型调查，有意识地选择具有代表性的典型个体进行深入细致的调查</li>
+<li>随机抽样(Random Sampling): 按照一定随机规则(如概率分配),从总体中抽取部分个体的抽样模式<ol>
+<li>简单随机抽样(Simple Random Sampling): 按照”每个个体被抽到的机会均等”的规则，从总体中抽取部分个体。</li>
+<li>分层抽样(Stratified Sampling): 按照总体中个体的某特征，吧总体中的个体分成若干群组(类)。然后对类中的个体进行简单随机抽样，分层抽样要求层之间的差异大于层的内部的个体差异。不同群体所抽取的个体个数采用以下两个方法确定：<ul>
+<li>等数分配法：每类抽取同样数量的个体</li>
+<li>等比分配阀：抽样比例一致</li>
+</ul>
+</li>
+<li>整群抽样(Cluster Sampling):将总体中的个体，按照某一标志量氛围若干群，然后以群为单位，对群进行随机抽样，再对抽出来的群进行普查。整群抽样要求群体之间具有相似的特征。</li>
+</ol>
+</li>
+</ul>
+<p>补充：</p>
+<ul>
+<li>对于分层抽样，需要确保的是划分之后同一板块的群体在属性参数上具有同质性，即群组内部一致性较高，否则分层抽样就没有意义。</li>
+<li>整群抽样往往按照自然空间分布分成不重复的部分，其特别是自然存在的群组，而非特别属性划分的集合，强调内在的不一致性。</li>
+</ul>
+<p>抽样中涉及的重要问题：</p>
+<ol>
+<li>目标群体(Target population)的确定: 研究者希望研究结果可以应用到的所有个例的集合</li>
+<li>确定研究群体(Study population): 目标群体的具体化</li>
+<li>关于子群体或特殊板块/群组(stratum): 研究者对于某些板块可能有特别的兴趣，可以依据板块对目标群体分类。</li>
+</ol>
+<p>什么是一个好的抽样:</p>
+<p>一个好的的样本取决于一个好的抽样过程。</p>
+<p>样本的效度(Sampling validty): 从样本中得到的结论在应用到目标群体时具有普适性(Generalizability),这种普适性决定样本是否有用。</p>
+<ol>
+<li>外部效度(External validty): 样本是否具有代表性</li>
+<li>统计效度(Statistical validty): 如果样本具有代表性，得出的结论是否可靠。</li>
+</ol>
+<p>注: 要提高统计效度，样本量要足够大，这样随机误差就会比较小；另外测试方法要准确，如量表设计等方面。</p>
+<p>样本量的确定(调研分析系统设计上可用)<br>经验公式:</p>
+<p>$$<br>n = \frac{Z^2 S^2}{d^2}<br>$$</p>
+<p>n: 所需样本量</p>
+<p>Z: 置信水平的Z<br>S: 总体标准差<br>d: 实际应用中允许的调查误差</p>
+<p>抽样过程需要进行以下的决策:</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>选择</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目标群体是什么？</td>
+<td>目标群体由研究所希望应用到的群体范围决定</td>
+</tr>
+<tr>
+<td>需要抽样还是普查</td>
+<td>如果群体不大则普查，否则抽样</td>
+</tr>
+<tr>
+<td>抽样方法的选择</td>
+<td>随机抽样比较常见，研究分析单位有多层时考虑整群抽样或分层抽样，有时候需要多种抽样方法</td>
+</tr>
+<tr>
+<td>抽样的范围如何确定</td>
+<td>寻找抽样范围，即如何抽样，何时抽样等问题</td>
+</tr>
+<tr>
+<td>有没有子群体或特殊板块需要特别关注</td>
+<td>取决于研究者是否要对子群体进行研究。如果是，则要保证子群体具有足够大的样本</td>
+</tr>
+</tbody>
+</table>
+
       
     </div>
     
@@ -372,189 +487,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tpwy.github.io/2019/03/17/信息分析与决策chapter1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="倾启君">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Qingqi's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/17/信息分析与决策chapter1/" itemprop="url">信息分析与决策chapter1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-17T15:47:12+08:00">2019-03-17</time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/信息分析与决策/" itemprop="url" rel="index">
-                    <span itemprop="name">信息分析与决策</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/SPSS/" rel="tag"># SPSS</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">1.2k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          课程概述信息分析与决策是本学期唯三的一门课程，也是专业里非常实用的一门课程，算是点亮一个SPSS和做调研问卷的技能树吧,如果以后想要从事数据方面的工作帮助也是很大的。单有技术不懂理论已经越来越走不动了。
-信息源于分析，分析的过程是逐步认识事物，理解失误的过程，其目的就是发觉或发现有价值的知识或规律帮
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/17/信息分析与决策chapter1/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/17/信息分析与决策chapter1/" rel="next" title="信息分析与决策chapter1">
+                <i class="fa fa-chevron-left"></i> 信息分析与决策chapter1
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -564,10 +526,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -575,6 +538,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -595,8 +562,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -656,6 +632,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据与数据的获得"><span class="nav-number">1.</span> <span class="nav-text">数据与数据的获得</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-总体、个体、特征与数据"><span class="nav-number">1.1.</span> <span class="nav-text">2.1 总体、个体、特征与数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-数据类型"><span class="nav-number">1.2.</span> <span class="nav-text">2.2 数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-获得数据的调查方法"><span class="nav-number">1.3.</span> <span class="nav-text">2.3 获得数据的调查方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -785,6 +777,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
 
   
 
