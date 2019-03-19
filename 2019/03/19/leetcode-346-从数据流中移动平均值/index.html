@@ -122,7 +122,7 @@
 
 
 
-  <title>leetcode启动 | Qingqi's Blog</title>
+  <title>leetcode-346-从数据流中移动平均值 | Qingqi's Blog</title>
   
 
 
@@ -229,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tpwy.github.io/2019/03/18/leetcode启动/">
+    <link itemprop="mainEntityOfPage" href="https://tpwy.github.io/2019/03/19/leetcode-346-从数据流中移动平均值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="倾启君">
@@ -246,7 +246,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">leetcode启动</h1>
+          <h1 class="post-title" itemprop="name headline">leetcode-346-从数据流中移动平均值</h1>
         
 
         <div class="post-meta">
@@ -258,7 +258,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-18T21:52:03+08:00">2019-03-18</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-19T15:07:26+08:00">2019-03-19</time>
             
 
             
@@ -310,7 +310,7 @@
                 
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
-                <span title="Words count in article">838</span>
+                <span title="Words count in article">1.8k</span>
               
 
               
@@ -324,7 +324,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -344,11 +344,14 @@
       
 
       
-        <h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>刷LeetCode的这个想法嘛从大概大二上学期的时候就开始有的，不过一直以来都是蠢蠢欲动却又坚持不下来，一方面那个时候编程方面的基础都不扎实，甚至数据结构都还没开始学，直接上LeetCode上面的题，哪怕是最低难度的都可能会让我脑壳疼一下。大三下开始课程已经变得很少了，也有了非常多的时间供我考研和额外的多学习一些有用的东西。虽然开学这半个多月来还是坚持不到十点就因为各种不顺心的事情遭受打击而坚持不下去了。但所谓万事开头难嘛，我也发现自己其实并不是没有耐心去做一件事情，而是在刚刚想要开始做的时候会有烦躁和抵触的心理，但度过了开头后进入状态了反而会有种停不下来的感觉。可能最初的计划也是存在颇多不合理的地方，对自己的要求过高了，但愿自己也不要在压力下面迷失了自己吧。</p>
-<p>接下来就开始坚持看看能不能一天刷一道题或者两道题这样的进度，当然前面已经低难度的题目还是可以更多的操作一下的。至于选择的语言嘛，一开始也是过于天真了想要自己学过的语言全部来一套，当做熟悉一下各种语言的语法和差异，然而后来发觉这种方法实在是过于费时而且并没有什么好的效果。这次的话LeetCode主要就是用Java和C语言来完成吧，选择的主要理由，无非之前用Java学过数据结构和算法，用起来比较熟手，而C语言是接下来考研需要用到的也需要多练习使用。至于Python一个是编写数据结构本身难度相对比较低，而且用的也比较熟了又要大量封装好的标准库方法可供调用，用于练习意义不是特别大，一般如果说能用Java或者C语言来完成了使用Python就更没有难度了。而JavaScript的话，自己姑且基础都快忘光了平时用的暂时也不多，就先放一放了。</p>
-<p>之前在中文版LeetCode 力扣里面，我是按照LeetCode探索里的初级算法的顺序来刷的，初级算法的题目相对还是比较简单的，主要的时间大多花在如何提高算法效率上，不过考虑到接下来还要考数据结构，还是按照数据结构里的栏目来刷题，或许效果会好一些。</p>
-<p>冲就完事了！</p>
-
+        <h1 id="从数据流中移动平均值"><a href="#从数据流中移动平均值" class="headerlink" title="从数据流中移动平均值"></a>从数据流中移动平均值</h1><p>Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.<br>For example:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MovingAverage m = <span class="keyword">new</span> MovingAverage(<span class="number">3</span>);</span><br><span class="line">m.next(<span class="number">1</span>) = <span class="number">1</span></span><br><span class="line">m.next(<span class="number">10</span>) = (<span class="number">1</span> + <span class="number">10</span>) / <span class="number">2</span></span><br><span class="line">m.next(<span class="number">3</span>) = (<span class="number">1</span> + <span class="number">10</span> + <span class="number">3</span>) / <span class="number">3</span></span><br><span class="line">m.next(<span class="number">5</span>) = (<span class="number">10</span> + <span class="number">3</span> + <span class="number">5</span>) / <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>Solution:</p>
+<p>Use a Queue serve as a sliding window, and also maintain the current sum inside of the window. </p>
+<p>Java实现:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MovingAverage</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Queue&lt;Integer&gt; queue;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> prevsum;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MovingAverage</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.queue = <span class="keyword">new</span> LinkedList&lt;Integer&gt;();</span><br><span class="line">        <span class="keyword">this</span>.size = size;</span><br><span class="line">        <span class="keyword">this</span>.prevsum = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">next</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (queue.size() == <span class="keyword">this</span>.maxSize)</span><br><span class="line">            <span class="keyword">this</span>.prevsum -= <span class="keyword">this</span>.queue.remove();</span><br><span class="line">        <span class="keyword">this</span>.queue.add(val);</span><br><span class="line">        <span class="keyword">this</span>.prevsum += val;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.prevsum / <span class="keyword">this</span>.queue.size();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>C语言实现:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">int</span> *<span class="built_in">queue</span>;</span><br><span class="line">    <span class="keyword">double</span> prevsum;</span><br><span class="line">    <span class="keyword">int</span> tail;</span><br><span class="line">    <span class="keyword">int</span> count;</span><br><span class="line">    <span class="keyword">int</span> size;</span><br><span class="line">&#125; MovingAverage;</span><br><span class="line"></span><br><span class="line"><span class="function">MovingAverage* <span class="title">movingAverageCreate</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    MovingAverage* obj = (MovingAverage*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(MovingAverage));</span><br><span class="line">    obj-&gt;<span class="built_in">queue</span> = (<span class="keyword">int</span>*)<span class="built_in">malloc</span>(size * <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    obj-&gt;prevsum = <span class="number">0.0</span>;</span><br><span class="line">    obj-&gt;tail = <span class="number">0</span>;</span><br><span class="line">    obj-&gt;count = <span class="number">0</span>;</span><br><span class="line">    obj-&gt;size = size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">movingAverageNext</span><span class="params">(MovingAverage* obj, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (obj-&gt;count==obj-&gt;size) &#123;</span><br><span class="line">        obj-&gt;prevsum -= obj-&gt;<span class="built_in">queue</span>[obj-&gt;tail];</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        obj-&gt;count++;</span><br><span class="line">    &#125;</span><br><span class="line">    obj-&gt;<span class="built_in">queue</span>[obj-&gt;tail] = val;</span><br><span class="line">    obj-&gt;tail = (obj-&gt;tail + <span class="number">1</span>) % obj-&gt;size;</span><br><span class="line">    obj-&gt;prevsum += val;</span><br><span class="line">    <span class="keyword">return</span> obj-&gt;prevsum/obj-&gt;count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -365,7 +368,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/LeetCode-数组/" rel="tag"># LeetCode, 数组</a>
+            <a href="/tags/LeetCode-数据结构/" rel="tag"># LeetCode, 数据结构</a>
           
         </div>
       
@@ -378,8 +381,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/信息分析与决策chapter3p3/" rel="next" title="信息分析与决策chapter3 Part3">
-                <i class="fa fa-chevron-left"></i> 信息分析与决策chapter3 Part3
+              <a href="/2019/03/19/leetcode-622-设计循环队列/" rel="next" title="leetcode-622-设计循环队列">
+                <i class="fa fa-chevron-left"></i> leetcode-622-设计循环队列
               </a>
             
           </div>
@@ -387,10 +390,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/19/leetcode-622-设计循环队列/" rel="prev" title="leetcode-622-设计循环队列">
-                leetcode-622-设计循环队列 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -522,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从数据流中移动平均值"><span class="nav-number">1.</span> <span class="nav-text">从数据流中移动平均值</span></a></li></ol></div>
             
 
           </div>
