@@ -62,7 +62,7 @@
 
 
 
-  <meta name="keywords" content="SPSS,可视化,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -73,21 +73,14 @@
 
 
 
-<meta name="description" content="数据处理与数据核查描述统计与图示技术3.3.3 图示技术前言: 探索性数据分析(EDA)探索性数据分析(Exploratory Data Analysis, 以下简称EDA),指对已有的数据在尽量少的先验假定下进行探索，通过计算统计量，绘图，制表等手段探索数据的结构和规律的一种数据分析方法。 特点：  分析思路上让数据说话，不强调对数据的管理 EDA分析方法灵活，不拘泥于传统的统计方法 分析工具简">
-<meta name="keywords" content="SPSS,可视化">
-<meta property="og:type" content="article">
-<meta property="og:title" content="信息分析与决策chapter3p4">
-<meta property="og:url" content="https://tpwy.github.io/2019/03/20/信息分析与决策chapter3p4/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="https://tpwy.github.io/tags/index.html">
 <meta property="og:site_name" content="Qingqi&#39;s Blog">
-<meta property="og:description" content="数据处理与数据核查描述统计与图示技术3.3.3 图示技术前言: 探索性数据分析(EDA)探索性数据分析(Exploratory Data Analysis, 以下简称EDA),指对已有的数据在尽量少的先验假定下进行探索，通过计算统计量，绘图，制表等手段探索数据的结构和规律的一种数据分析方法。 特点：  分析思路上让数据说话，不强调对数据的管理 EDA分析方法灵活，不拘泥于传统的统计方法 分析工具简">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/d90d2938gy1g198y7es6tj20mp0e3qb7.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/d90d2938ly1g1995yinm9j22bb1qh7wi.jpg">
-<meta property="og:updated_time" content="2019-03-20T06:57:56.076Z">
+<meta property="og:updated_time" content="2019-03-20T06:57:48.603Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="信息分析与决策chapter3p4">
-<meta name="twitter:description" content="数据处理与数据核查描述统计与图示技术3.3.3 图示技术前言: 探索性数据分析(EDA)探索性数据分析(Exploratory Data Analysis, 以下简称EDA),指对已有的数据在尽量少的先验假定下进行探索，通过计算统计量，绘图，制表等手段探索数据的结构和规律的一种数据分析方法。 特点：  分析思路上让数据说话，不强调对数据的管理 EDA分析方法灵活，不拘泥于传统的统计方法 分析工具简">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/d90d2938gy1g198y7es6tj20mp0e3qb7.jpg">
+<meta name="twitter:title" content="tags">
 
 
 
@@ -119,7 +112,7 @@
 
 
 
-  <link rel="canonical" href="https://tpwy.github.io/2019/03/20/信息分析与决策chapter3p4/">
+  <link rel="canonical" href="https://tpwy.github.io/tags/">
 
 
 
@@ -333,7 +326,7 @@
                 
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
-                <span title="Words count in article">376</span>
+                <span title="Words count in article">2.5k</span>
               
 
               
@@ -347,7 +340,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">3 mins.</span>
               
             </div>
           
@@ -386,6 +379,58 @@
 <li>…</li>
 </ul>
 <p><img src="https://ws1.sinaimg.cn/large/d90d2938ly1g1995yinm9j22bb1qh7wi.jpg" alt="图表建议"></p>
+<p>上述各类图示都可以通过Echarts和Matplotlib这两个常用的工具来实现。</p>
+<h5 id="Bar-Charts-柱状图"><a href="#Bar-Charts-柱状图" class="headerlink" title="Bar Charts(柱状图)"></a>Bar Charts(柱状图)</h5><ol>
+<li>柱状图使用二维数据集(每个数据点包括x和y两个值),但通常只有一个维度Y需要比较。</li>
+<li>柱状图利用柱子的高度(视觉通道为尺寸),反映数据的差异。肉眼对高度差异很敏感，辨识效果非常好。</li>
+<li>局限: 柱状图使用中小规模的数据。</li>
+<li>一般X为分类变量，Y为连续性变量。</li>
+<li>柱状图多用于分类变量分布的描述，X作为分类变量，一般是序次变量或名义级变量，Y对应频次。则该柱状图表达分类变量X的频数分布。</li>
+<li>Bar图还可以有各种变化，如分组条图引入三个维度的信息，通常用于代笔分析，还有堆砌条图等。</li>
+</ol>
+<h5 id="Histogram-直方图"><a href="#Histogram-直方图" class="headerlink" title="Histogram(直方图)"></a>Histogram(直方图)</h5><p>刻度级样本的频数统计：刻度级数据很多或者精度相对高，使得数据集合中重复出现的样本值过少时，就需要对数据分组，用直方图观察不同组数据的频次与频率。直方图多用于对连续性变量的分布描述。</p>
+<p>直方图需要对数据分组，Y为组内样本的频次或频率，适用于刻度级变量数据。</p>
+<p>直方图对连续性变量的分组原则:</p>
+<ol>
+<li>等区间长度原则</li>
+<li>Num of Groups = Round((Max - Min) / Length of Interval)) + 1</li>
+</ol>
+<p>直方图和柱状图的主要区别在于: 直方图的X轴是对连续性变量的取值空间进行分组，而柱状图的X轴则是分类变量的所有取值空间</p>
+<h5 id="Pie-Chart-饼图"><a href="#Pie-Chart-饼图" class="headerlink" title="Pie Chart(饼图)"></a>Pie Chart(饼图)</h5><p>饼图(Pie Chart)常用于表示分类变量的结构或分布，但不适用于不重复的样本值的个数太多的情况。</p>
+<p>饼图的视觉通道是尺寸，感知维度是二维的面积，但人眼对面积是不敏感的，所以通常用柱状图替代饼图。</p>
+<p>Pie Slice Chart 切块饼: 有时候需要加上标记来明确说明数据的状态。</p>
+<h5 id="Line-Chart-折线图"><a href="#Line-Chart-折线图" class="headerlink" title="Line Chart(折线图)"></a>Line Chart(折线图)</h5><p>折线图适合二位大数据集，尤其趋势比单个数据点更重要的场合，例如时间序列分析。</p>
+<p>一张折线图中，往往可以比较多个数据集。</p>
+<h5 id="Scatter-Chart-散点图"><a href="#Scatter-Chart-散点图" class="headerlink" title="Scatter Chart(散点图)"></a>Scatter Chart(散点图)</h5><p>散点图可以描述两个或三个维度的数据之间的关系。散点图通常用来探索两个变量间的关系，视觉通道为位置和颜色。Bubble Chart(气泡图)还可以利用气泡的大小描述数据。</p>
+<h3 id="SPSS中的图示"><a href="#SPSS中的图示" class="headerlink" title="SPSS中的图示"></a>SPSS中的图示</h3><p>P-P图和Q-Q图是具有特别功能的一种散点图。</p>
+<p>当研究者要进行更深入的统计分析时，研究者往往还期望考察某连续性变量是否服从某种理论分布，例如是否服从正态分布。而P-P图和Q-Q图可以直观地达到这样的目的。</p>
+<ul>
+<li>P-P图是根据变量的累积比例与指定分布的累积比例之间的关系所绘制的图形。</li>
+<li>通过P-P图可以检验数据是否符合指定的分布。</li>
+<li>当数据符合指定分布时，P-P途中个点近似呈一条直线</li>
+<li><p>如何P-P图中个点不呈直线，但有一定规律，可以对变量数据进行转换，使转换后的数据更接近于指定分布</p>
+</li>
+<li><p>Q-Q图是一种散点图。正态分布的Q-Q图就是由标准正态分布的期望值为纵坐标，样本值观察值为横坐标的散点图。要利用Q-Q图鉴别样本数据是否近似于正态分布，只需看Q-Q图上的点是否近似地在一条直线附近，而且该直线的斜率为标准差，截距为均值。</p>
+</li>
+</ul>
+<h3 id="箱线图-BoxPlots"><a href="#箱线图-BoxPlots" class="headerlink" title="箱线图(BoxPlots)"></a>箱线图(BoxPlots)</h3><p>箱线图简明地表达了样本数据的中心与离散特征，能够扼要地显示样本数据中心，范围，分布的主要特征(如偏斜程度等)。箱线图涉及区间的概念，仅适用于刻度级的样本数据。</p>
+<p><img src="https://ws1.sinaimg.cn/large/d90d2938gy1g19be23xjsj20am0c2mx7.jpg" alt="箱线图"></p>
+<p>基本结构：</p>
+<ol>
+<li>上四分点和下四分点之间的距离为四分间距(Interquartile range), 50%的数据集中在这一范围内，箱形越短，中间50%的数据的集中程度越高，反之越分散。Interquartile Range 有时可作为标准差的替代方法，测度数据的离散程度。</li>
+<li>从上四分点和下四分点可以看出上下各25%的数据的散布范围，以及数据分布的编写情况。中位数偏上，意味着数据的分布为左偏态分布，中位线月解禁箱形两端，数据分布的偏态就越明显。</li>
+<li>距离盒长3倍以上为极端值(Extremes), 距离盒长的1.5倍以上被认为是偏离值(Outliers)，极端值与偏离值越多，代表偏离情形越严重。</li>
+</ol>
+<p>箱线图的缺点：</p>
+<ul>
+<li>不能提供关于数据分布偏态等指标的精确度量</li>
+<li>对呀批量较大的数据，箱线图反映的形状信息比较模糊</li>
+<li>用中位数代表总体平均水平具有一定的局限性</li>
+</ul>
+<p>因此，在实际应用中，需要结合其他描述统计工具，如均值，标准差，偏度，分布函数等描述数据的总体特征概貌。</p>
+<p>总结：</p>
+<p>啊我就安利一下，Matplotlib和Echarts吧。Matplotlib基本上做Python数据分析都离不开它，不过图表样式的配置确实是有点麻烦的，平时一般都会用上seaborn。Echarts一方面是之前数据可视化的课程上学习了(啊过了一个多学期了我还没开始补D3.js)，一方面由百度的团队开发，中文文档和符合国情的案例都会比较多，API设计上也更简单一些，而且在移动网页上的效果还是不错的，接下来如果要开发数据可视化相关的Web应用会考虑继续用了，而且之前在做科研任务的时候，使用pyecharts这样的工具，还可以直接用Python生成动态图，不用额外写JavaScript的代码不要太便利。</p>
+<p>接下来的参数估计方面考虑加上Scipy的相关API吧？</p>
 
       
     </div>
@@ -525,7 +570,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -558,7 +603,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据处理与数据核查"><span class="nav-number">1.</span> <span class="nav-text">数据处理与数据核查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#描述统计与图示技术"><span class="nav-number">1.1.</span> <span class="nav-text">描述统计与图示技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-3-图示技术"><span class="nav-number">1.1.1.</span> <span class="nav-text">3.3.3 图示技术</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言-探索性数据分析-EDA"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">前言: 探索性数据分析(EDA)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#描述统计的可视化"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">描述统计的可视化</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据处理与数据核查"><span class="nav-number">1.</span> <span class="nav-text">数据处理与数据核查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#描述统计与图示技术"><span class="nav-number">1.1.</span> <span class="nav-text">描述统计与图示技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-3-图示技术"><span class="nav-number">1.1.1.</span> <span class="nav-text">3.3.3 图示技术</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言-探索性数据分析-EDA"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">前言: 探索性数据分析(EDA)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#描述统计的可视化"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">描述统计的可视化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Bar-Charts-柱状图"><span class="nav-number">1.1.1.2.1.</span> <span class="nav-text">Bar Charts(柱状图)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Histogram-直方图"><span class="nav-number">1.1.1.2.2.</span> <span class="nav-text">Histogram(直方图)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Pie-Chart-饼图"><span class="nav-number">1.1.1.2.3.</span> <span class="nav-text">Pie Chart(饼图)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Line-Chart-折线图"><span class="nav-number">1.1.1.2.4.</span> <span class="nav-text">Line Chart(折线图)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Scatter-Chart-散点图"><span class="nav-number">1.1.1.2.5.</span> <span class="nav-text">Scatter Chart(散点图)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SPSS中的图示"><span class="nav-number">1.1.2.</span> <span class="nav-text">SPSS中的图示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箱线图-BoxPlots"><span class="nav-number">1.1.3.</span> <span class="nav-text">箱线图(BoxPlots)</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -590,7 +635,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Site words total count">25k</span>
+    <span title="Site words total count">27k</span>
   
 
   
