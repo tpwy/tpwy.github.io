@@ -73,18 +73,18 @@
 
 
 
-<meta name="description" content="设计循环队列设计你的循环队列实现。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。 循环队列的一个好处是我们可以利用这个队列之前用过的空间。在一个普通队列里，一旦一个队列满了，我们就不能插入下一个元素，即使在队列前面仍有空间。但是使用循环队列，我们能使用这些空间去存储新的值。 你的实现应该支持如下操作：  My">
+<meta name="description" content="从数据流中移动平均值Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.For example: 12345MovingAverage m = new MovingAverage(3);m.next(1) = 1m.next(">
 <meta name="keywords" content="LeetCode, 数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode-622-设计循环队列">
-<meta property="og:url" content="https://tpwy.github.io/2019/03/19/leetcode-622-设计循环队列/index.html">
+<meta property="og:title" content="leetcode-346-从数据流中移动平均值">
+<meta property="og:url" content="https://tpwy.github.io/2019/03/19/leetcode-346-从数据流中移动平均值/index.html">
 <meta property="og:site_name" content="Qingqi&#39;s Blog">
-<meta property="og:description" content="设计循环队列设计你的循环队列实现。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。 循环队列的一个好处是我们可以利用这个队列之前用过的空间。在一个普通队列里，一旦一个队列满了，我们就不能插入下一个元素，即使在队列前面仍有空间。但是使用循环队列，我们能使用这些空间去存储新的值。 你的实现应该支持如下操作：  My">
+<meta property="og:description" content="从数据流中移动平均值Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.For example: 12345MovingAverage m = new MovingAverage(3);m.next(1) = 1m.next(">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-03-19T07:00:47.991Z">
+<meta property="og:updated_time" content="2019-03-19T07:58:52.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode-622-设计循环队列">
-<meta name="twitter:description" content="设计循环队列设计你的循环队列实现。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。 循环队列的一个好处是我们可以利用这个队列之前用过的空间。在一个普通队列里，一旦一个队列满了，我们就不能插入下一个元素，即使在队列前面仍有空间。但是使用循环队列，我们能使用这些空间去存储新的值。 你的实现应该支持如下操作：  My">
+<meta name="twitter:title" content="leetcode-346-从数据流中移动平均值">
+<meta name="twitter:description" content="从数据流中移动平均值Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.For example: 12345MovingAverage m = new MovingAverage(3);m.next(1) = 1m.next(">
 
 
 
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="https://tpwy.github.io/2019/03/19/leetcode-622-设计循环队列/">
+  <link rel="canonical" href="https://tpwy.github.io/2019/03/19/leetcode-346-从数据流中移动平均值/">
 
 
 
@@ -225,6 +225,58 @@
         <h1>LeetCode<small>Category</small>
         </h1>
       </div>
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/03/20/leetcode-2-两数相加/" itemprop="url">
+              
+                <span itemprop="name">leetcode-2-两数相加</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-03-20T12:23:40+08:00" content="2019-03-20">
+          03-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2019/03/19/leetcode-1-两数之和/" itemprop="url">
+              
+                <span itemprop="name">leetcode-1-两数之和</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-03-19T23:14:58+08:00" content="2019-03-19">
+          03-19
+        </time>
+      </div>
+
+    </header>
+  </article>
+
 
       
         
@@ -357,7 +409,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -379,7 +431,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -428,7 +480,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Site words total count">20k</span>
+    <span title="Site words total count">25k</span>
   
 
   
